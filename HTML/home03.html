@@ -700,29 +700,65 @@
                 </div><!-- .stg-row -->
             </section>
 
-            <!-- Section: CTA -->
-            <section data-padding="bottom">
-                <div class="bringer-masked-cta bringer-masked-block" data-unload="fade-down">
-                    <form action="mail-short.php" method="post" data-fill-error="Please, fill out the form." class="bringer-contact-form is-short bringer-masked-media" data-appear="fade-up">
-                        <div class="bringer-form-content bringer-cta-form">
-                            <div class="bringer-cta-form-content" data-appear="fade-up" data-delay="100">
-                                <div class="bringer-cta-title">Ready to set your Brand ablaze?</div>
-                                <input type="email" id="subscribe_email" name="subscribe_email" placeholder="email@example.com" required>
-                            </div>
-                            <div class="bringer-cta-form-button" data-appear="fade-up" data-delay="200">
-                                <button type="submit">
-                                    <span class="bringer-icon bringer-icon-arrow-submit"></span>
-                                </button>
-                            </div>
+           <!-- Section: CTA Form -->
+           <section class="backlight-top is-fullwidth">
+            <div class="stg-row stg-valign-middle stg-cta-with-image stg-tp-column-reverse">
+                <div class="stg-col-5" data-unload="fade-left">
+                    <div class="bringer-offset-image" data-bg-src="img/cta/contact-section-bg.jpg" data-appear="fade-up" data-threshold="0.25"></div>
+                    <form action="mail.php" method="post" class="bringer-contact-form bringer-block" data-fill-error="Please, fill out the contact form." data-appear="fade-right" data-threshold="0.25">
+                        <div class="bringer-form-content">
+                            <!-- Field: Name -->
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <!-- Field: Email -->
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>    
+                            <!-- Field: Message -->
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <!-- Form Button -->
+                            <button type="submit" value="Send Message">Get a FREE Quote</button>
                             <div class="bringer-contact-form__response"></div>
                         </div>
                         <span class="bringer-form-spinner"></span>
                     </form>
-                    <div class="bringer-masked-cta-content bringer-masked-content at-top-right">
-                        <p class="bringer-large-text" data-appear="fade-down">Let's craft a visual identity that ignites passion and loyalty. ✨</p>
+                </div>
+                <div class="stg-col-6 stg-offset-1" data-unload="fade-right">
+                    <div class="bringer-cta-form-content">
+                        <div class="bringer-cta-form-title" data-split-appear="fade-up" data-split-delay="100" data-split-by="line">
+                            Let's discuss your next creative project.
+                        </div>
+                        <div class="bringer-cta-text">
+                            <div class="stg-row stg-valign-middle">
+                                <div class="stg-col-2 stg-offset-2 stg-tp-col-1 stg-tp-offset-3 stg-m-col-1 stg-m-offset-2" data-appear="fade-right">
+                                    <i class="bringer-cta-icon"></i>
+                                </div>
+                                <div class="stg-col-8 stg-tp-col-7 stg-m-col-8 stg-m-offset-1" data-appear="fade-left">
+                                    <p class="bringer-large-text">We help creative agencies, designers, and other creative people showcase their perfect work.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bringer-cta-counters bringer-grid-3cols bringer-m-grid-3cols" data-stagger-appear="fade-up" data-stagger-delay="100">
+                            <!-- Counter Item -->
+                            <div class="bringer-counter bringer-small-counter" data-delay="3000">
+                                <div class="bringer-counter-number">420</div>
+                                <div class="bringer-counter-label">Projects Done</div>
+                            </div><!-- .bringer-counter -->
+                            <!-- Counter Item -->
+                            <div class="bringer-counter bringer-small-counter" data-delay="3000">
+                                <div class="bringer-counter-number" data-suffix="K+">8</div>
+                                <div class="bringer-counter-label">Happy Clients</div>
+                            </div><!-- .bringer-counter -->
+                            <!-- Counter Item -->
+                            <div class="bringer-counter bringer-small-counter" data-delay="3000">
+                                <div class="bringer-counter-number" data-suffix="+">12</div>
+                                <div class="bringer-counter-label">Years in Work</div>
+                            </div><!-- .bringer-counter -->
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
         </div><!-- .stg-container -->
 
