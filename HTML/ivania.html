@@ -188,6 +188,35 @@
                 </div>
                 
             </div>
+            
+        <script>
+            function sendToWhatsApp(event) {
+     event.preventDefault();
+     
+     // Recopila los datos del formulario
+     const name = document.getElementById('name').value;
+     const email = document.getElementById('email').value;
+     const message = document.getElementById('message').value;
+ 
+     // Formatea el mensaje con saltos de línea y negritas
+     const formattedMessage = encodeURIComponent(
+         "*Consulta de Formulario*\n\n" +
+         "*Nombre:* " + name + "\n" +
+         "*Correo:* " + email + "\n\n" +
+         "*Mensaje:*\n" + message
+     );
+     
+     // Número de WhatsApp en formato internacional
+     const whatsappNumber = '13057725632';
+     
+     // URL de WhatsApp
+     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${formattedMessage}`;
+     
+     // Abre el enlace en una nueva pestaña
+     window.open(whatsappUrl, '_blank');
+ }
+ 
+         </script>
         </section>
         </div><!-- .stg-container -->
 
