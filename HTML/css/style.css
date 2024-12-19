@@ -4389,3 +4389,8 @@ button.pswp__button.bringer-pswp-next::after {
         display: none;
     }
 }
+
+.mcpa-logo img {
+    width: 300px; /* Ajusta este valor para el ancho deseado */
+    height: auto; /* Mantiene la proporción del logo */
+}
