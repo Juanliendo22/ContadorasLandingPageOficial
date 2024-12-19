@@ -473,7 +473,23 @@ h1 sup, h2 sup, h3 sup, h4 sup, h5 sup, h6 sup {
 .bringer-page-title {
     display: block;
     width: 100%;
+    font-size: 4rem; /* Tamaño base */
 }
+
+/* Ajuste para pantallas medianas (tablets, etc.) */
+@media (max-width: 768px) {
+    .bringer-page-title {
+        font-size: 3rem; /* Reducido para pantallas más pequeñas */
+    }
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .bringer-page-title {
+        font-size: 2.5rem; /* Aún más reducido para móviles */
+    }
+}
+
 .bringer-post-title {
     margin-bottom: 0;
 }
